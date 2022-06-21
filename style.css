@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(img/bg-desktop.svg);
+    background-size: 78%;
+    background-position-x: center;
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 85%;
+    height: 90%;
+}
+.header {
+    padding-bottom: 60px;
+}
+.header img {
+    width: 200px;
+}
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sections .upsection img {
+    width: 100%;
+}
+.downsection {
+    padding: 40px;
+}
+.downsection h1 {
+    color: #fff;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.downsection p {
+    color: rgb(225, 220, 220);    
+    margin-bottom: 20px;
+}
+.downsection button {
+    font-size: 15px;
+    padding: 16px 60px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 1px 3px 5px hsl(257, 35%, 17%);
+}
+.downsection button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: end;
+    padding: 10px 0;
+}
+.footer .icons {
+    display: flex;
+    gap: 20px;
+}
+.footer .icons i {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #fff; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.footer .icons i:hover {
+    color: hsl(300, 69%, 71%);    
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        min-width: 370px;
+    }
+    .sections {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+    .downsection h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .downsection p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .downsection button {
+        display: block;
+        font-size: 12px;
+        padding: 10px 60px;
+        margin: 0 auto;
+    }
+    .icons {
+        margin: 0 auto;
+    }
+}
